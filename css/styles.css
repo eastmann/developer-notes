@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
     margin: 0;
     padding: 0;
 }
@@ -20,24 +21,30 @@ body {
 }
 
 .notes__sidebar {
-    border-right: 2px solid #dddddd;
     flex-shrink: 0;
+
     overflow-y: auto;
     padding: 1em;
+
     width: 300px;
+
+    border-right: 2px solid #dddddd;
 }
 
 .notes__add {
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+
+    width: 100%;
+
+    color: #ffffff;
+    font-size: 1.25em;
+    font-weight: bold;
+
     background: #009578;
     border: none;
     border-radius: 7px;
-    color: #ffffff;
     cursor: pointer;
-    font-size: 1.25em;
-    font-weight: bold;
-    margin-bottom: 1em;
-    padding: 0.75em 0;
-    width: 100%;
 }
 
 .notes__add:hover {
@@ -47,6 +54,7 @@ body {
 .notes__list {
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
@@ -55,9 +63,10 @@ body {
 }
 
 .notes__list-item.-selected {
-    background: #eeeeee;
-    border-radius: 7px;
     font-weight: bold;
+
+    border-radius: 7px;
+    background: #eeeeee;
 }
 
 .notes__small-title,
@@ -82,15 +91,17 @@ body {
 .notes__preview {
     display: flex;
     flex-direction: column;
-    padding: 2em 3em;
     flex-grow: 1;
+
+    padding: 2em 3em;
 }
 
 .notes__title,
 .notes__body {
+    width: 100%;
+
     border: none;
     outline: none;
-    width: 100%;
 }
 
 .notes__title {
@@ -100,8 +111,11 @@ body {
 
 .notes__body {
     flex-grow: 1;
+
+    margin-top: 2em;
+
     font-size: 1.2em;
     line-height: 1.5;
-    margin-top: 2em;
+
     resize: none;
 }
